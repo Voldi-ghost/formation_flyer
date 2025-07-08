@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-decoration: none;
+}
+
+.blog1{
+   text-decoration: none; 
+}
+
+.play_design{
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte1{
+    text-align: center;
+    margin: 5px 40px;
+    
+}
+
+.texte1 h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #2600FF;   
+}
+
+.texte1 h1 span{
+    color: transparent;
+    -webkit-text-stroke: 1px #2600FF; /* Contour noir de 2px */
+}
+
+.texte1 p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    margin: 7px 0 35px 0;
+}
+
+.image{
+    height: 350px;
+    background-image: url('../Assets/images/2151912405.jpg');
+    background-size: cover;
+    background-position:left;
+    background-repeat: no-repeat;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn_rejoin{
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 200px;
+     height: 44px;
+     border-radius: 15px;
+     margin-top: 130px;
+}
+
+.btn_rejoin a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #2600FF;
+}
+
+.boule{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 25px;
+    color: #2600FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog3, .blog4{
+    padding: 27.5px;
+}
+
+.texte2 h1{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #2600FF;
+    /* font-size: 1.8rem; */
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+
+.image2 img{
+    width: 320px;
+    height: 220px;
+} 
+
+.texte3 h2{
+    margin-top: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    line-height: 1.2;
+
+}
+
+.texte3 p{
+    margin-top: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
+.blog4{
+    display: flex;
+    flex-direction: column;
+}
+
+.case{
+    margin-bottom: 55px;
+}
+
+.blog4 .case:nth-child(odd){
+    align-self: flex-start; /* Enfants pairs à gauche */
+}
+.blog4 .case:nth-child(even){
+    align-self: flex-end; /* Enfants impairs à droite */
+}
+
+.case .title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.case:nth-child(even) .title{
+    flex-direction: row-reverse;
+}
+
+.num{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #2600FF;
+    color: white;
+    display: flex;             /* Active Flexbox */
+    justify-content: center;   /* Centre horizontalement */
+    align-items: center;       /* Centre verticalement */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.case .title h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.case p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    width: 240px;
+    margin-top: 20px;
+}
+
+.btn_details{
+     background-color: #2600FF;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 44px;
+     border-radius: 15px;
+}
+
+.btn_details a{
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.blog5{
+    background-color: #282828;
+    color: white;
+    padding: 40px;
+}
+
+.blog5 .title h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+}
+
+.blog5 p{
+    font-family: 'Nunito';
+    font-weight: 500;
+    margin: 27px 0;
+}
+
+.nase h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+}
+
+.nase p{
+    font-family: 'Nunito';
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+hr{
+    margin-bottom: 27px;
+}
+
+/*footer*/
+footer{
+    padding: 40px;
+}
+
+footer .logo img{
+    width: 100px;
+}
+
+.contact p a{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    color: black;
+}
+
+.contact ul{
+    list-style: none;
+}
+
+.contact ul li, .contact ul li a{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color: black;
+    margin-left: 20px;
+}
+
+footer .inu{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
