@@ -1,0 +1,317 @@
+@media screen and (min-width:800px) {
+    .resp{
+    display: flex;
+  }
+
+  .blog1{
+    flex-basis: 35%;
+  }
+
+  .blog2{
+    flex-basis: 65%;
+    z-index: 100;
+  }
+
+  .design{
+    display: block;
+    position: absolute;
+    top: 407px;
+  }
+
+  .design img{
+    width: 820px;
+  }
+
+  .image{
+    height: 650px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-start-start-radius: 45%;
+    border-end-start-radius: 45%;
+    }
+
+    .btn_rejoin{
+     width: 300px;
+     height: 48px;
+     
+    }
+
+    .blog3, .blog4{
+        padding: 0 110px;
+        margin-bottom: 60px;
+    }
+
+    .texte2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texte2 h1{
+    font-size: 2.5rem;
+    width: 600px;
+    margin: 50px 0;   
+    }
+
+    .image2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image2 img{
+    width: 782px;
+    height: 506px;
+    }
+
+    .texte3{
+        display: flex;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .texte3 h2{
+        font-size: 2.5rem;
+    }
+
+    .texte3 p{
+        font-size: 1.5rem;
+
+    }
+
+
+    .case{
+        margin-bottom: 5px;
+    }
+
+    .case p{
+        font-size: 1.5rem;
+        width: 440px;
+
+    }
+
+    .case .title h2{
+        font-size: 2rem;
+    }
+
+    .btn_details{
+        margin: 40px auto 0;
+        width: 300px;
+    }
+
+    .bloc1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .bloc2 .nase .ligne_inu{
+        display: block;
+    }
+    
+
+    .bloc2{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: auto auto;
+    }
+
+    .nase{
+        margin: 20px 100px 0 0;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .logo img{
+    width: 200px;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .resp{
+    display: flex;
+  }
+
+  .blog1{
+    flex-basis: 35%;
+  }
+
+  .blog2{
+    flex-basis: 65%;
+    z-index: 100;
+  }
+
+  .design{
+    display: block;
+    position: absolute;
+    top: 407px;
+  }
+
+  .design img{
+    width: 830px;
+  }
+
+  .image{
+    animation: changeImage 13s infinite;
+    transition: 2s ease-in-out;
+    height: 650px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-start-start-radius: 45%;
+    border-end-start-radius: 45%;
+    }
+
+    @keyframes changeImage {
+        0%{
+            background-position: center;
+        }
+        50%{
+            background-position: top;            
+        }
+        100%{
+            background-position: center;
+        }
+    }
+
+    .btn_rejoin{
+     width: 300px;
+     height: 48px;
+     
+    }
+    .boule{
+        position: absolute;
+        top: 85vh;
+        left: 100vh;
+        width: 70px;
+        height: 70px;
+    }
+
+    .blog3, .blog4{
+        padding: 0 110px;
+        margin-bottom: 60px;
+    }
+
+    .texte2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texte2 h1{
+    font-size: 2.5rem;
+    width: 600px;
+    margin: 50px 0;   
+    }
+
+    .image2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image2 img{
+    width: 782px;
+    height: 506px;
+    }
+
+    .texte3{
+        display: flex;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .texte3 h2{
+        font-size: 2.5rem;
+    }
+
+    .texte3 h2::before{
+        content: "";
+        position: absolute;
+        left: 110px;
+        top: 1570px;
+        bottom: -2px;
+        width: 10%;
+        height: 2px;
+        background-color: black;
+    }
+
+    .texte3 p{
+        font-size: 1.5rem;
+
+    }
+
+
+    .case{
+        margin-bottom: 5px;
+    }
+
+    .case p{
+        font-size: 1.5rem;
+        width: 440px;
+
+    }
+
+    .case .title h2{
+        font-size: 2rem;
+    }
+
+    .btn_details{
+        margin: 40px auto 0;
+        width: 300px;
+    }
+
+    .bloc1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .bloc2 .nase .ligne_inu{
+        display: block;
+    }
+    
+
+    .bloc2{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: auto auto;
+    }
+
+    .nase{
+        margin: 20px 100px 0 0;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .logo img{
+    width: 200px;
+    }
+
+    .contact{
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

@@ -11,6 +11,10 @@ body{
     text-decoration: none;
 }
 
+.design{
+    display: none;
+}
+
 .blog1{
    text-decoration: none; 
 }
@@ -38,7 +42,7 @@ body{
 
 .texte1 h1 span{
     color: transparent;
-    -webkit-text-stroke: 1px #2600FF; /* Contour noir de 2px */
+    -webkit-text-stroke: 1px #2600FF; /* Contour noir de 1px */
 }
 
 .texte1 p{
@@ -48,8 +52,10 @@ body{
 }
 
 .image{
+    animation: changeImage 13s infinite;
+    transition: 2s ease-in-out;
     height: 350px;
-    background-image: url('../Assets/images/2151912405.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../Assets/images/2151912405.jpg');
     background-size: cover;
     background-position:left;
     background-repeat: no-repeat;
@@ -60,6 +66,18 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
+@keyframes changeImage {
+        0%{
+            background-position: center;
+        }
+        50%{
+            background-position: top;       
+        }
+        100%{
+            background-position: center;
+        }
+    }
 
 .btn_rejoin{
      background-color: white;
@@ -91,6 +109,18 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+/*animations*/
+.boule i {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+
 
 .blog3, .blog4{
     padding: 27.5px;
@@ -226,6 +256,10 @@ hr{
     margin-bottom: 27px;
 }
 
+.ligne_inu{
+    display: none;
+}
+
 /*footer*/
 footer{
     padding: 40px;
@@ -260,4 +294,21 @@ footer .inu{
     text-align: center;
     margin-top: 30px;
 }
+
+
+/*animations*/
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 
