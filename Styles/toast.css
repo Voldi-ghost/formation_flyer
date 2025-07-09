@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000000be;
+}
+
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(0, 0, 0, 0); */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);  /* fond semi-transparent */
+  padding: 2rem;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  z-index: 9999;
+  display: none;
+}
+
+.toast.show {
+  display: block;
+}
+
+.toast-content {
+  background-color: #ffffff;
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+}
+
+.toast-close {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  font-size: 2rem;
+}
+
+.item_toast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.item_toast:nth-child(2), .item_toast:nth-child(3){
+    gap: 80px;
+}
+
+.item_toast h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.item_toast h1 span, .reponse span, .toast-close i{
+    color: #2600FF;
+}
+
+
+
+.question{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+
+}
+
+.reponse{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn_remplir{
+     background-color: #2600FF;
+     height: 44px;
+     width: 50%;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 15px;
+     margin: 0 auto 20px;
+     cursor: pointer;
+}
+

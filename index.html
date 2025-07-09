@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="Styles/responsive.css">
+    <link rel="stylesheet" href="Styles/toast.css">
 
     <title>Formation flyer</title>
 </head>
 <body>
     <main>
         <section class="resp">
-            <article class="blog1">
+            <article class="blog1 fade-in">
                     <div class="play_design"><img src="Assets/images/Monitor_Play.svg" alt=""></div>
                 <div class="texte1">
                     <h1 class="title">DEVENEZ <span>MONTEUR VIDEO EN</span> 2025</h1>
@@ -27,18 +28,47 @@
 
             <article class="blog2">
                 <div class="image">
-                    <div class="btn_rejoin"><a href="#">Rejoignez-Nous</a></div>
-                    <div class="boule"><i class="fa-solid fa-chevron-down fa-2x"></i>
+                    <div class="btn_rejoin fade-in" id="btnInfo"><a href="#">Plus d'info</a></div>
+                    <div class="boule fade-in"><a href="#video"><i class="fa-solid fa-chevron-down fa-2x"></i></a>
                 </div>
                 </div>
             </article>
+
+            <!-- code toast -->
+
+            <div id="toast" class="toast">
+  <div class="toast-content">
+    <div class="toast-close" id="closeToast"><i class="fa-solid fa-xmark"></i></div>
+    <div class="toast_content_mini">
+        <div class="item_toast">
+            <h1><span><i class="fas fa-calendar-alt"></i></span> JOURS</h1>
+            <p>Du 06/03/2025 au 20/06/2025, de 08:00 à 10:00</p>
+        </div>
+        <div class="item_toast">
+            <h1><span><i class="fas fa-tag"></i></span> PRIX</h1>
+            <p>L'inscription est à 5$ et la participation 20$</p>
+        </div>
+        <div class="item_toast">
+            <h1><span><i class="fas fa-map-marker-alt"></i></span> LIEU</h1>
+            <p>Limete, croisement avenue victoire et université</p>
+        </div>
+        <h1 class="question">COMMENT S'INSCRIRE ?</h1>
+        <p class="reponse">Nous contacter directement en cliquant sur le numéro : <span>+243840348656</span> ou remplir le formulaire pour enregistrer et on vous reconctactera</p>
+
+        <div class="btn_remplir">Remplir le formulaire</div>
+    </div>
+  </div>
+</div>
+
+
+            <!-- fin code toast -->
         </section>
 
         <article class="blog3">
             <div class="texte2">
-                <h1 data-aos="slide-up" class="title">Formation By Flyer For The Future.</h1>
+                <h1 id="video" data-aos="slide-up" class="title">Formation By Flyer For The Future.</h1>
             </div>
-            <div data-aos="zoom-in" class="image2">
+            <div  data-aos="zoom-in" data-aos-duration="1200" class="image2">
                 <img src="Assets/images/8138e2595a23bfc2ba86233877ea3000f9a81d89.png" alt="" srcset="">
             </div>
             <div data-aos="fade-up" class="texte3">
@@ -50,28 +80,28 @@
         </article>
 
         <article class="blog4">
-            <section data-aos="fade-right" class="case">
+            <section data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out" class="case">
                 <div class="title">
                     <div class="num">1</div>
                     <h2>Melange de deux vidéo</h2>
                 </div>
                 <p>Chaque jour est une page blanche, une occasion de tracer une nouvelle direction. Même les pas les plus hésitants avancent.</p>
             </section>
-            <section data-aos="fade-left" class="case">
+            <section data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-out" class="case">
                 <div class="title">
                     <div class="num">2</div>
                     <h2>Coordination et main</h2>
                 </div>
                 <p>Chaque jour est une page blanche, une occasion de tracer une nouvelle direction. Même les pas les plus hésitants avancent.</p>
             </section>
-            <section data-aos="fade-right" class="case">
+            <section data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-in-out" class="case">
                 <div class="title">
                     <div class="num">3</div>
                     <h2>Evolution filmographie</h2>
                 </div>
                 <p>Chaque jour est une page blanche, une occasion de tracer une nouvelle direction. Même les pas les plus hésitants avancent.</p>
             </section>
-            <section data-aos="fade-left" class="case">
+            <section data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-in-out" class="case">
                 <div class="title">
                     <div class="num">4</div>
                     <h2>Et on continue</h2>
@@ -79,7 +109,7 @@
                 <p>Chaque jour est une page blanche, une occasion de tracer une nouvelle direction. Même les pas les plus hésitants avancent.</p>
             </section>
 
-             <div data-aos="fade-down" class="btn_details"><a href="#">Details de la formation</a></div>
+             <div data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out" class="btn_details"><a href="#">Details de la formation</a></div>
             <div class="boule"></div>
         </article>
         <article class="blog5">
@@ -120,8 +150,8 @@
     </main>
 
     <footer>
-        <div class="logo"><img src="Assets/images/logo.jpg" alt="" srcset=""></div>
-        <div class="contact">
+        <div data-aos="zoom-in" data-aos-duration="1200" class="logo"><img src="Assets/images/logo.jpg" alt="" srcset=""></div>
+        <div data-aos="zoom-in" class="contact">
             <div class="item1">
                 <p><a href="">Site Officiel</a></p>
                 <ul><li><a href="">Flyerff.com</a></li></ul>
@@ -142,5 +172,29 @@
      <script>
         AOS.init();
      </script>
+
+<!-- JS toast -->
+     <script>
+  const btn = document.getElementById('btnInfo');
+  const toast = document.getElementById('toast');
+  const close = document.getElementById('closeToast');
+
+  // Afficher le toast
+  btn.addEventListener('click', () => {
+    toast.classList.add('show');
+  });
+
+  // Fermer via le bouton 
+  close.addEventListener('click', () => {
+    toast.classList.remove('show');
+  });
+
+  // Fermer si on clique en dehors du contenu du toast
+  toast.addEventListener('click', (e) => {
+    if (!e.target.closest('.toast-content')) {
+      toast.classList.remove('show');
+    }
+  });
+</script>
 </body>
 </html>

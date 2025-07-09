@@ -67,6 +67,8 @@ body{
     flex-direction: column;
 }
 
+/*animation image*/
+
 @keyframes changeImage {
         0%{
             background-position: center;
@@ -88,7 +90,10 @@ body{
      height: 44px;
      border-radius: 15px;
      margin-top: 130px;
+     transition: all 0.5s;
 }
+
+
 
 .btn_rejoin a{
     text-decoration: none;
@@ -96,6 +101,15 @@ body{
     font-size: 1.2rem;
     font-weight: 900;
     color: #2600FF;
+}
+
+.btn_rejoin:hover{
+    background-color: #0000008a;
+    border: 2px solid white;
+    color: white;
+}
+.btn_rejoin a:hover{
+    color: white;
 }
 
 .boule{
@@ -108,7 +122,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s;
 }
+
+/*animation d'entrée*/
+
+.fade-in {
+  opacity: 0;
+  animation: fade 1.5s ease-in forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
 
 /*animations*/
 .boule i {
