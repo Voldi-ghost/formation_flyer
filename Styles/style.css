@@ -81,12 +81,17 @@ img, section, article, section, div{
 
 @keyframes changeImage {
         0%{
+            background-size: 100%;
             background-position: center;
         }
+    
         50%{
-            background-position: top;       
+            background-size: 120%;
+            background-position: top;      
         }
+        
         100%{
+            background-size: 100%;
             background-position: center;
         }
     }
