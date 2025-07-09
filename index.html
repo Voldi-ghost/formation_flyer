@@ -241,17 +241,20 @@
         // Afficher le toast
         btn.addEventListener('click', () => {
             toast.classList.add('show');
+            document.body.classList.add('no-scroll');
         });
 
         // Fermer via le bouton 
         close.addEventListener('click', () => {
             toast.classList.remove('show');
+            document.body.classList.remove('no-scroll');
         });
 
         // Fermer si on clique en dehors du contenu du toast
         toast.addEventListener('click', (e) => {
             if (!e.target.closest('.toast-content')) {
                 toast.classList.remove('show');
+                document.body.classList.remove('no-scroll');
             }
         });
     </script>

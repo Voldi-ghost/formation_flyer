@@ -100,6 +100,13 @@ p{
      cursor: pointer;
 }
 
+/* Bloquer le scroll de la page */
+.no-scroll {
+  overflow: hidden;
+  height: 100vh; /* éviter le saut de page */
+}
+
+
 @media screen and (min-width:800px){
   .toast {
   position: fixed;
