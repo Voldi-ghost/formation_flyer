@@ -26,7 +26,7 @@ p{
   font-family: 'Inter', sans-serif;
   z-index: 9999;
   width: 100%;
-  /* display: none; */
+  display: none;
 }
 
 .toast.show {
