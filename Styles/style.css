@@ -11,6 +11,12 @@ body{
     text-decoration: none;
 }
 
+img, section, article, section, div{
+    max-width: 100%;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
 .design{
     display: none;
 }
